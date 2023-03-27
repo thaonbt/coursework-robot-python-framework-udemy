@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.10.8 on win32)" generated="20221101 14:16:06.014" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="C:\Users\Admin\PycharmProjects\RobotFramework\tests">
+<suite id="s1-s1" name="testDemo6" source="C:\Users\Admin\PycharmProjects\RobotFramework\tests\testDemo6.robot">
+<test id="s1-s1-t1" name="Validate Cards display in the Shopping Page" line="17">
+<kw name="open the browser with the Mortgage payment url" type="SETUP">
+<msg timestamp="20221101 14:16:08.829" level="FAIL">No keyword with name 'open the browser with the Mortgage payment url' found.</msg>
+<status status="FAIL" starttime="20221101 14:16:08.828" endtime="20221101 14:16:08.829"/>
+</kw>
+<kw name="Close Browser Session" type="TEARDOWN">
+<msg timestamp="20221101 14:16:08.835" level="FAIL">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20221101 14:16:08.834" endtime="20221101 14:16:08.835">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<status status="FAIL" starttime="20221101 14:16:08.818" endtime="20221101 14:16:08.835">Setup failed:
+No keyword with name 'open the browser with the Mortgage payment url' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<doc>To validate the Login form</doc>
+<status status="FAIL" starttime="20221101 14:16:06.237" endtime="20221101 14:16:08.851"/>
+</suite>
+<status status="FAIL" starttime="20221101 14:16:06.165" endtime="20221101 14:16:08.856"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="testDemo6">Tests.testDemo6</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221101 14:16:08.817" level="ERROR">Error in file 'C:\Users\Admin\PycharmProjects\RobotFramework\tests\testDemo6.robot' on line 8: Resource file 'Generic.robot' does not exist.</msg>
+</errors>
+</robot>

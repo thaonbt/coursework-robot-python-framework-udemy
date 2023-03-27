@@ -1,0 +1,47 @@
+*** Settings ***
+Documentation   To validate the Login form
+Library         SeleniumLibrary
+Library         DataDriver      file=resources/data.csv     encoding=utf-8      dialect=unix
+Test Setup      open the browser with the Mortgage payment url
+Test Teardown   Close Browser Session
+Resource        ../PO/Generic.robot
+#selenium
+Test Template   Validate UnSuccesrsful Login
+
+*** Variables ***
+${Error_Message_Login}      css:.alert-danger
+
+#*** Test Cases ***      username                password
+#Invalid username        dshed                   learning
+#Invalid password        rahulshettyacademy      ploughkf
+#Special characters      @(*#                    learning
+
+*** Test Case ***
+Login with user ${username} and password ${password}         xyz         123456
+
+*** Keywords ***
+Validate UnSuccesrsful Login
+    [Arguments]     ${username}        ${password}
+#    open the browser with the Mortgage payment url
+    Fill the login Form          ${username}        ${password}
+    wait until it checks and displays error message
+    verify error message is correct
+
+#*** Keywords ***
+#open the browser with the Mortgage payment url
+#    create Webdriver    Chrome  executable_path=C:/Users/Admin/PycharmProjects/RobotFramework/webdriver/chromedriver.exe
+#    Go To               https://rahulshettyacademy.com/loginpagePractise/
+
+Fill the login Form
+    [arguments]     ${username}     ${password}
+    Input Text      id:username     ${username}
+    Input Password  id:password     ${invalid_password}
+    Click Button    signInBtn
+
+wait until it checks and displays error message
+    Wait Until Element Is Visible   ${Error_Message_Login}
+
+verify error message is correct
+    ${result}=  Get Text    ${Error_Message_Login}
+    Should Be Equal As Strings  ${result}   Incorrect username/password.
+    Element Text Should Be  ${Error_Message_Login}  Incorrect username/password.

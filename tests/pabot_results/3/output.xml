@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.10.8 on win32)" generated="20221101 14:11:49.773" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="C:\Users\Admin\PycharmProjects\RobotFramework\tests">
+<suite id="s1-s1" name="testDemo3" source="C:\Users\Admin\PycharmProjects\RobotFramework\tests\testDemo3.robot">
+<test id="s1-s1-t1" name="Validate Child window Functionality" line="14">
+<kw name="open the browser with the Mortgage payment url" library="Generic" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=${chromedriver_path}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20221101 14:11:54.398" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20221101 14:13:20.600" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221101 14:13:20.600" level="FAIL">WebDriverException: Message: chrome not reachable
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011A1ED3+2236115]
+	Ordinal0 [0x011392F1+1807089]
+	Ordinal0 [0x010465C0+812480]
+	Ordinal0 [0x0103C08A+770186]
+	Ordinal0 [0x0106860E+951822]
+	Ordinal0 [0x01064200+934400]
+	Ordinal0 [0x010619C9+924105]
+	Ordinal0 [0x0109806C+1146988]
+	Ordinal0 [0x01097A6A+1145450]
+	Ordinal0 [0x010918A6+1120422]
+	Ordinal0 [0x0106A73D+960317]
+	Ordinal0 [0x0106B71F+964383]
+	GetHandleVerifier [0x0144E7E2+2743074]
+	GetHandleVerifier [0x014408D4+2685972]
+	GetHandleVerifier [0x01232BAA+532202]
+	GetHandleVerifier [0x01231990+527568]
+	Ordinal0 [0x0114080C+1837068]
+	Ordinal0 [0x01144CD8+1854680]
+	Ordinal0 [0x01144DC5+1854917]
+	Ordinal0 [0x0114ED64+1895780]
+	BaseThreadInitThunk [0x7713FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x776C7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x776C7B8E+238]
+</msg>
+<status status="FAIL" starttime="20221101 14:11:54.398" endtime="20221101 14:13:50.871"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20221101 14:13:50.872" endtime="20221101 14:13:50.872"/>
+</kw>
+<status status="FAIL" starttime="20221101 14:11:54.398" endtime="20221101 14:13:50.873"/>
+</kw>
+<kw name="Close Browser Session" library="Generic" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221101 14:13:50.874" endtime="20221101 14:13:50.874"/>
+</kw>
+<status status="PASS" starttime="20221101 14:13:50.873" endtime="20221101 14:13:50.875"/>
+</kw>
+<status status="FAIL" starttime="20221101 14:11:54.382" endtime="20221101 14:13:50.875">Setup failed:
+WebDriverException: Message: chrome not reachable
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011A1ED3+2236115]
+	Ordinal0 [0x011392F1+1807089]
+	Ordinal0 [0x010465C0+812480]
+	Ordinal0 [0x0103C08A+770186]
+	Ordinal0 [0x0106860E+951822]
+	Ordinal0 [0x01064200+934400]
+	Ordinal0 [0x010619C9+924105]
+	Ordinal0 [0x0109806C+1146988]
+	Ordinal0 [0x01097A6A+1145450]
+	Ordinal0 [0x010918A6+1120422]
+	Ordinal0 [0x0106A73D+960317]
+	Ordinal0 [0x0106B71F+964383]
+	GetHandleVerifier [0x0144E7E2+2743074]
+	GetHandleVerifier [0x014408D4+2685972]
+	GetHandleVerifier [0x01232BAA+532202]
+	GetHandleVerifier [0x01231990+527568]
+	Ordinal0 [0x0114080C+1837068]
+	Ordinal0 [0x01144CD8+1854680]
+	Ordinal0 [0x01144DC5+1854917]
+	Ordinal0 [0x0114ED64+1895780]
+	BaseThreadInitThunk [0x7713FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x776C7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x776C7B8E+238]
+</status>
+</test>
+<doc>To validate the Login form</doc>
+<status status="FAIL" starttime="20221101 14:11:50.054" endtime="20221101 14:13:50.877"/>
+</suite>
+<status status="FAIL" starttime="20221101 14:11:49.960" endtime="20221101 14:13:50.882"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="testDemo3">Tests.testDemo3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

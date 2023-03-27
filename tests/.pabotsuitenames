@@ -1,0 +1,13 @@
+datasources:ba3f4813675c82966a3b4d526c549e5fb266fd02
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:58efad4531e4913b2d7746d40c13183e14272c64
+--suite Tests.testDemo1
+--suite Tests.testDemo2
+--suite Tests.testDemo2cont
+--suite Tests.testDemo3
+--suite Tests.testDemo4
+--suite Tests.testDemo5
+--suite Tests.testDemo6
+--suite Tests.testDemo6cont
+--suite Tests.testDemo6contClean

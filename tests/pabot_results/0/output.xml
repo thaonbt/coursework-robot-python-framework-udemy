@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.10.8 on win32)" generated="20221101 14:11:49.788" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="C:\Users\Admin\PycharmProjects\RobotFramework\tests">
+<suite id="s1-s1" name="testDemo1" source="C:\Users\Admin\PycharmProjects\RobotFramework\tests\testDemo1.robot">
+<test id="s1-s1-t1" name="Validate UnSuccesrsful Login" line="12">
+<kw name="open the browser with the Mortgage payment url">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=C:/Users/Admin/PycharmProjects/RobotFramework/webdriver/chromedriver.exe</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20221101 14:11:54.289" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20221101 14:11:54.289" endtime="20221101 14:13:25.554"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221101 14:13:25.554" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<status status="PASS" starttime="20221101 14:13:25.554" endtime="20221101 14:13:53.794"/>
+</kw>
+<status status="PASS" starttime="20221101 14:11:54.289" endtime="20221101 14:13:53.794"/>
+</kw>
+<kw name="Fill the login Form">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>rahulshettyacademy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221101 14:13:53.794" level="INFO">Typing text 'rahulshettyacademy' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20221101 14:13:53.794" endtime="20221101 14:13:58.169"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>12345678</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221101 14:13:58.169" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg timestamp="20221101 14:13:58.263" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221101 14:13:58.357" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221101 14:13:58.169" endtime="20221101 14:13:58.357"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221101 14:13:58.357" level="INFO">Clicking button 'signInBtn'.</msg>
+<status status="PASS" starttime="20221101 14:13:58.357" endtime="20221101 14:13:58.497"/>
+</kw>
+<status status="PASS" starttime="20221101 14:13:53.794" endtime="20221101 14:13:58.497"/>
+</kw>
+<kw name="wait until it checks and displays error message">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Error_Message_Login}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20221101 14:15:08.552" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=106.0.5249.121)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011A1ED3+2236115]
+	Ordinal0 [0x011392F1+1807089]
+	Ordinal0 [0x010466FD+812797]
+	Ordinal0 [0x01039449+758857]
+	Ordinal0 [0x010392C1+758465]
+	Ordinal0 [0x01038113+753939]
+	Ordinal0 [0x01038748+755528]
+	Ordinal0 [0x0104CEFA+839418]
+	Ordinal0 [0x010AFFC3+1245123]
+	Ordinal0 [0x01091A8C+1120908]
+	Ordinal0 [0x010A59E2+1202658]
+	Ordinal0 [0x010918A6+1120422]
+	Ordinal0 [0x0106A73D+960317]
+	Ordinal0 [0x0106B71F+964383]
+	GetHandleVerifier [0x0144E7E2+2743074]
+	GetHandleVerifier [0x014408D4+2685972]
+	GetHandleVerifier [0x01232BAA+532202]
+	GetHandleVerifier [0x01231990+527568]
+	Ordinal0 [0x0114080C+1837068]
+	Ordinal0 [0x01144CD8+1854680]
+	Ordinal0 [0x01144DC5+1854917]
+	Ordinal0 [0x0114ED64+1895780]
+	BaseThreadInitThunk [0x7713FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x776C7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x776C7B8E+238]
+</msg>
+<msg timestamp="20221101 14:15:08.553" level="FAIL">Element 'css:.alert-danger' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20221101 14:13:58.497" endtime="20221101 14:15:30.538"/>
+</kw>
+<status status="FAIL" starttime="20221101 14:13:58.497" endtime="20221101 14:15:30.538"/>
+</kw>
+<kw name="verify error message is correct">
+<status status="NOT RUN" starttime="20221101 14:15:30.539" endtime="20221101 14:15:30.539"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221101 14:15:30.539" endtime="20221101 14:15:45.278"/>
+</kw>
+<status status="FAIL" starttime="20221101 14:11:54.289" endtime="20221101 14:15:45.278">Element 'css:.alert-danger' not visible after 5 seconds.</status>
+</test>
+<doc>To validate the Login form</doc>
+<status status="FAIL" starttime="20221101 14:11:50.054" endtime="20221101 14:15:46.091"/>
+</suite>
+<status status="FAIL" starttime="20221101 14:11:49.991" endtime="20221101 14:15:46.091"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="testDemo1">Tests.testDemo1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221101 14:15:08.552" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=106.0.5249.121)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011A1ED3+2236115]
+	Ordinal0 [0x011392F1+1807089]
+	Ordinal0 [0x010466FD+812797]
+	Ordinal0 [0x01039449+758857]
+	Ordinal0 [0x010392C1+758465]
+	Ordinal0 [0x01038113+753939]
+	Ordinal0 [0x01038748+755528]
+	Ordinal0 [0x0104CEFA+839418]
+	Ordinal0 [0x010AFFC3+1245123]
+	Ordinal0 [0x01091A8C+1120908]
+	Ordinal0 [0x010A59E2+1202658]
+	Ordinal0 [0x010918A6+1120422]
+	Ordinal0 [0x0106A73D+960317]
+	Ordinal0 [0x0106B71F+964383]
+	GetHandleVerifier [0x0144E7E2+2743074]
+	GetHandleVerifier [0x014408D4+2685972]
+	GetHandleVerifier [0x01232BAA+532202]
+	GetHandleVerifier [0x01231990+527568]
+	Ordinal0 [0x0114080C+1837068]
+	Ordinal0 [0x01144CD8+1854680]
+	Ordinal0 [0x01144DC5+1854917]
+	Ordinal0 [0x0114ED64+1895780]
+	BaseThreadInitThunk [0x7713FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x776C7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x776C7B8E+238]
+</msg>
+</errors>
+</robot>

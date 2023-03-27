@@ -1,0 +1,37 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.testDemo6 :: To validate the Login form                                 
+==============================================================================
+Validate Cards display in the Shopping Page                             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Admin\PycharmProjects\RobotFramework\tests\testDemo6.robot:17
+    T:  Validate Cards display in the Shopping Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Admin\PycharmProjects\RobotFramework\tests\testDemo6.robot:6
+      open the browser with the Mortgage payment url    
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Admin\PycharmProjects\RobotFramework\tests\testDemo6.robot:17
+    T:  Validate Cards display in the Shopping Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Admin\PycharmProjects\RobotFramework\tests\testDemo6.robot:7
+      Close Browser Session    
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+No keyword with name 'open the browser with the Mortgage payment url' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?
+------------------------------------------------------------------------------
+Tests.testDemo6 :: To validate the Login form                         | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Admin\PycharmProjects\RobotFramework\tests\pabot_results\6\output.xml

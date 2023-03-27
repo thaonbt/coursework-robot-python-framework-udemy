@@ -1,0 +1,28 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.testDemo1 :: To validate the Login form                                 
+==============================================================================
+Validate UnSuccesrsful Login                                            
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Admin\PycharmProjects\RobotFramework\tests\testDemo1.robot:12
+    T:  Validate UnSuccesrsful Login    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Admin\PycharmProjects\RobotFramework\tests\testDemo1.robot:15
+      wait until it checks and displays error message    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Admin\PycharmProjects\RobotFramework\tests\testDemo1.robot:29
+      Wait Until Element Is Visible    ${Error_Message_Login}
+      |  ${Error_Message_Login} = css:.alert-danger (str)
+______________________________________________________________________________
+| FAIL |
+Element 'css:.alert-danger' not visible after 5 seconds.
+------------------------------------------------------------------------------
+Tests.testDemo1 :: To validate the Login form                         | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Admin\PycharmProjects\RobotFramework\tests\pabot_results\0\output.xml

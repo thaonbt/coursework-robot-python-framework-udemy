@@ -1,0 +1,54 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.testDemo3 :: To validate the Login form                                 
+==============================================================================
+Validate Child window Functionality                                     
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Admin\PycharmProjects\RobotFramework\tests\testDemo3.robot:14
+    T:  Validate Child window Functionality    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Admin\PycharmProjects\RobotFramework\tests\testDemo3.robot:6
+      open the browser with the Mortgage payment url    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Admin\PycharmProjects\RobotFramework\PO\Generic.robot:21
+      Create Webdriver    Chrome    executable_path=${chromedriver_path}
+      |  executable_path=${chromedriver_path} = executable_path=C:/Users/Admin/PycharmProjects/RobotFramework/webdriver/chromedriver.exe (str)
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+WebDriverException: Message: chrome not reachable
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011A1ED3+2236115]
+	Ordinal0 [0x011392F1+1807089]
+	Ordinal0 [0x010465C0+812480]
+	Ordinal0 [0x0103C08A+770186]
+	Ordinal0 [0x0106860E+951822]
+	Ordinal0 [0x01064200+934400]
+	Ordinal0 [0x010619C9+924105]
+	Ordinal0 [0x0109806C+1146988]
+	Ordinal0 [0x01097A6A+1145450]
+	Ordinal0 [0x010918A6+1120422]
+	Ordinal0 [0x0106A73D+960317]
+	Ordinal0 [0x0106B71F+964383]
+	GetHandleVerifier [0x0144E7E2+2743074]
+	GetHandleVerifier [0x014408D4+2685972]
+	GetHandleVerifier [0x01232BAA+532202]
+	GetHandleVerifier [0x01231990+527568]
+	Ordinal0 [0x0114080C+1837068]
+	Ordinal0 [0x01144CD8+1854680]
+	Ordinal0 [0x01144DC5+1854917]
+	Ordinal0 [0x0114ED64+1895780]
+	BaseThreadInitThunk [0x7713FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x776C7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x776C7B8E+238]
+------------------------------------------------------------------------------
+Tests.testDemo3 :: To validate the Login form                         | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Admin\PycharmProjects\RobotFramework\tests\pabot_results\3\output.xml

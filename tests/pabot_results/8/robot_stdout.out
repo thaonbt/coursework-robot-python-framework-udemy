@@ -1,0 +1,61 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.testDemo6contClean :: To validate the Login form                        
+==============================================================================
+Validate UnSuccesrsful Login                                          | PASS |
+------------------------------------------------------------------------------
+Validate Cards display in the Shopping Page                             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Admin\PycharmProjects\RobotFramework\tests\testDemo6contClean.robot:27
+    T:  Validate Cards display in the Shopping Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Admin\PycharmProjects\RobotFramework\tests\testDemo6contClean.robot:33
+      Enter the Country    ${country_name}
+      |  ${country_name} = India (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Admin\PycharmProjects\RobotFramework\PO\ConfirmationPage.robot:19
+      Select Checkbox    css:div.checkbox input
+______________________________________________________________________________
+| FAIL |
+ElementClickInterceptedException: Message: element click intercepted: Element <input id="checkbox2" type="checkbox"> is not clickable at point (398, 243). Other element would receive the click: <label for="checkbox2">...</label>
+  (Session info: chrome=106.0.5249.121)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00B81ED3+2236115]
+	Ordinal0 [0x00B192F1+1807089]
+	Ordinal0 [0x00A266FD+812797]
+	Ordinal0 [0x00A5BEC7+1031879]
+	Ordinal0 [0x00A59E6C+1023596]
+	Ordinal0 [0x00A57A5B+1014363]
+	Ordinal0 [0x00A566E7+1009383]
+	Ordinal0 [0x00A4C416+967702]
+	Ordinal0 [0x00A71A8C+1120908]
+	Ordinal0 [0x00A4BD84+966020]
+	Ordinal0 [0x00A71CA4+1121444]
+	Ordinal0 [0x00A859E2+1202658]
+	Ordinal0 [0x00A718A6+1120422]
+	Ordinal0 [0x00A4A73D+960317]
+	Ordinal0 [0x00A4B71F+964383]
+	GetHandleVerifier [0x00E2E7E2+2743074]
+	GetHandleVerifier [0x00E208D4+2685972]
+	GetHandleVerifier [0x00C12BAA+532202]
+	GetHandleVerifier [0x00C11990+527568]
+	Ordinal0 [0x00B2080C+1837068]
+	Ordinal0 [0x00B24CD8+1854680]
+	Ordinal0 [0x00B24DC5+1854917]
+	Ordinal0 [0x00B2ED64+1895780]
+	BaseThreadInitThunk [0x7713FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x776C7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x776C7B8E+238]
+------------------------------------------------------------------------------
+Select the Form and navigate to Child window                          | PASS |
+------------------------------------------------------------------------------
+Tests.testDemo6contClean :: To validate the Login form                | FAIL |
+3 tests, 2 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+3 tests, 2 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Admin\PycharmProjects\RobotFramework\tests\pabot_results\8\output.xml
