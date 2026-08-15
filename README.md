@@ -11,7 +11,7 @@ This repository contains all the hands-on exercises and framework code I wrote w
 *   **IDE:** PyCharm
 
 ### 📜 Verified Certificate
-*   You can view my official course completion certificate here: [Udemy Verified Certificate](https://udemy.com)
+*   You can view my official course completion certificate here: [Udemy Verified Certificate](https://www.udemy.com/certificate/UC-1abc7252-f2e7-4f7c-a148-8b5c34692de1/)
 
 ---
 _Disclaimer: This repository is maintained strictly for personal learning, code practice, and future reference._
